@@ -1,0 +1,13 @@
+.about-section{
+    padding: 20px 180px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.about-section img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}

@@ -1,0 +1,41 @@
+.contact-section {
+    display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    padding: 20px 180px;
+    gap: 20px;
+}
+
+.contact-section-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 150px;
+    height: 200px;
+}
+
+.contact-section ul {
+    list-style-type: none;
+    padding: 0;
+    text-decoration: none;
+}
+
+.contact-section ul li {
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.contact-section ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-section {
+    background-color: #495E57;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    padding-top: 30px;
+}
