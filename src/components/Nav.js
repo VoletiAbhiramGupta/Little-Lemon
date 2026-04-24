@@ -1,6 +1,7 @@
 import NavLogo from '../logos/Logo-1.png';
 import './Nav.css';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Nav() {
     const [navButtonOpen, setnavButtonOpen] = useState(false);
@@ -25,12 +26,12 @@ function Nav() {
                     <span></span>
                 </button>
                 <ul className={navButtonOpen ? 'nav-links open' : 'nav-links'}>
-                    <li className="nav-item" onClick={handleNavLinkClick}><a href="#home">Home</a></li>
-                    <li className="nav-item"><a href="#about">About</a></li>
-                    <li className="nav-item"><a href="#menu">Menu</a></li>
-                    <li className="nav-item"><a href="#reservations">Reservations</a></li>
-                    <li className="nav-item"><a href="#order-online">Order Online</a></li>
-                    <li className="nav-item"><a href="#login">Login</a></li>
+                    <li className="nav-item" onClick={handleNavLinkClick}><Link to="/">Home</Link></li>
+                    <li className="nav-item"><Link to="/about">About</Link></li>
+                    <li className="nav-item"><Link to="/menu">Menu</Link></li>
+                    <li className="nav-item"><Link to="/reservations">Reservations</Link></li>
+                    <li className="nav-item"><Link to="/order-online">Order Online</Link></li>
+                    <li className="nav-item"><Link to="/login">Login</Link></li>
                 </ul>
             </div>
         </nav>
